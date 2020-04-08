@@ -28,16 +28,9 @@
 
         </br>
 
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter Email" name="email" required>
-
-        </br>
-
         <label for="MI"><b>MI</b></label>
-        <input type="checkbox"  name="filiere" >
+        <input type="text"  name="filiere" >
 
-        <label for="SM"><b>SM</b></label>
-        <input type="checkbox"  name="filiere" >
 
         </br>
 
@@ -52,14 +45,11 @@
         </br>
 
         <label for="Math"><b>Math</b></label>
-        <input type="checkbox"  name="speciality_favorable" >
-        
-        <label for="Info"><b>Info</b></label>
-        <input type="checkbox"  name="speciality_favorable" >
+        <input type="text"  name="speciality_favorable" >
+
 
         </br>
-
-        <button type="submit" class="signup">Sign Up</button><input type="submit">
+        <input type="submit">
     </form>
 </body>
 </html>
