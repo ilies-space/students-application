@@ -8,6 +8,7 @@
 <body>
     <form action="func_singup.php" method="post">
 
+        
         <label for="matricule"><b>Matricule : </b></label>
         <input type="text" placeholder="Matricule De Attestation De Scolarité" name="matricule" required>
 
@@ -27,11 +28,11 @@
         <input type="password" placeholder="Enter Email" name="password" required>
 
         </br>
+        <!-- HNA MAHICH TAKHDEM
+        KHADMET KHATRA WSAYER SAME CODE YAZEH-->
+        <input name="filiere" type="radio" value="MI">Math Info<br>
 
-        <label for="MI"><b>MI</b></label>
-        <input type="text"  name="filiere" >
-
-
+        <input name="filiere" type="radio" value="SM">Science De La Matiere<br>
         </br>
 
         <label for="moy_math"><b>Moyenne Unité Math : </b></label>
@@ -44,12 +45,21 @@
 
         </br>
 
+        <!-- HADI MAKHREBTCH GA3 FIHA
+        HADI TANI RADIO BSH YKHOS CONDITION
+        IF FILIERE == MATH AFFICHER MATH OU INFO
+        SINON AFFICHER PHYSIQUE OU SM
+        Wa9ILA TENDAR B JQUERY
+         -->
         <label for="Math"><b>Math</b></label>
         <input type="text"  name="speciality_favorable" >
 
+        <label for="Info"><b>Info</b></label>
+        <input type="text"  name="speciality_favorable" >
 
         </br>
         <input type="submit">
+        
     </form>
 </body>
 </html>

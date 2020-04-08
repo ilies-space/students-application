@@ -15,6 +15,7 @@ $moiyenne_math = $_POST['moiyenne_math'];
 $moiyenne_info = $_POST['moiyenne_info'];
 $speciality_favorable = $_POST['speciality_favorable'];
 
+
 //look if user already exist or not
 $s = " select * from students where email ='$email'";
 
