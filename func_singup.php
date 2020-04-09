@@ -4,7 +4,7 @@ session_start();
 
 $con = mysqli_connect('localhost','root','');
 
-mysqli_select_db($con,'student-application');
+mysqli_select_db($con,'students-application');
 
 $matricule = $_POST['matricule'];
 $full_name = $_POST['full_name'];
@@ -26,6 +26,7 @@ $num = mysqli_num_rows($result);
 //if user already exist
 if ($num == 1)
 {
+	//HNA TEDIK L SINGUP TREFRESHIHA WSAYER
 	$message= "utilisateur existe deja";
 	echo "<SCRIPT type='text/javascript'>
 				alert('$message');
@@ -37,6 +38,7 @@ if ($num == 1)
 
 else
 {
+	// HNA TEDIK LEL PAGE PROFILE NORMALEMENT 
 	$reg = "insert into students (matricule ,full_name,email,password,filiere,moiyenne_math,moiyenne_info,speciality_favorable) 
   values ('$matricule','$full_name','$email','$password','$filiere','$moiyenne_math','$moiyenne_info',$speciality_favorable)";
 	mysqli_query($con,$reg);
