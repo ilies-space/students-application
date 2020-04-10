@@ -1,17 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>students-application</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+<body>
   <body>
-    students-application 2
+    <!-- Ce Site N'est Pas Responsive
+    Reason : On a pas utiliser Bootstrap
+    -->
+		<header>
+			<div class="navbar">
+			<!-- NAVBAR -->
+			<img class="logo" href="/" src="logo.png" alt="logo">
+			<nav>
+			  <ul class="nav-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+			  </ul>
+			</nav>
+			<a class="cta" href="#"><button onclick="window.location.href = 'Signup.php';">Créer Un Compte</button></a>
+			<a class="cta" href="#"><button onclick="window.location.href = 'Login.php';">Se Connecter</button></a>
+			<!-- /NAVBAR -->
+			</div>
 
-  </body>
-  <button>
-    <a href="">Login</a>
-  </button>
-  <button>
-    <a href="">SignUp</a>
-  </button>
+		<!-- Pic -->
+		<div class="image_head">
+			<img src="header.png" >
+		</div>
+		<div class="txt">
+			Vous Voulez Faire Le Meilleur <br>Choix De Ta Vie ?<br>
+			<a id="site" href="https://fr.wikihow.com/choisir-entre-deux-choses" target="_blank">
+			Cliquez Ici ! 
+			</a>
+		</div> 
+
+		</header>
+		<div class="grid-container">
+			<div class="item1">
+				<img src="Math.png">
+				<h3>Mathématique</h3>
+				<p>Les mathématiques (ou la mathématique) sont un ensemble de connaissances abstraites résultant de raisonnements logiques appliqués à des objets divers tels que les ensembles mathématiques, les nombres, les formes, les structures, les transformations.</p>
+			</div>
+
+			<div class="item2">
+				<img src="Computer Science.png">
+				<h3>L'informatique</h3>
+				<p>L'informatique est un domaine d'activité scientifique, technique, et industriel concernant le traitement automatique de l'information par l'exécution de programmes informatiques par des machines : des systèmes embarqués, des ordinateurs, des robots, des automates...
+x
+				</p>
+			</div>
+		</div>
+	
+		<div class="grid-container">
+			<div class="item3">
+				<img src="Chimie.png">
+				<h3>Chimie</h3>
+				<p>La chimie est une science de la nature expérimentale qui étudie la composition de la matière et ses transformations.
+
+					La chimie s'intéresse ainsi aux éléments qui constituent la matière (atomes, ions, etc.), à leurs propriétés et aux liaisons chimiques qui peuvent se créer entre eux.</p>
+			</div>
+			<div class="item4">
+				
+				<img src="Physique.png">
+				<h3>Physique</h3>
+				<p>La physique est la science qui essaie de comprendre, de modéliser, voire d'expliquer les phénomènes naturels de l'univers. Elle correspond à l'étude du monde qui nous entoure sous toutes ses formes, des lois de sa variation et de son évolution.
+
+				</p>
+			</div>
+		</div>
+	</body>
+</body>
 </html>
