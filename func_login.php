@@ -17,12 +17,7 @@ $result = mysqli_query($con, $s);
 $num    = mysqli_num_rows($result);
 if ($num == 1) {
 
-
-
-
-
 header('location:application_submited.php');
-
 
   //show alert message if user password wrong :
 ?>
