@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Signup.css">
+    <link rel="stylesheet" type="text/css" href="SignUp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -33,10 +33,12 @@
         </br>
         <!-- HNA MAHICH TAKHDEM
         KHADMET KHATRA WSAYER SAME CODE YAZEH-->
-        <input type="radio" name="filiere" value="MI">
-        <label for="MI"><b>Math Info</b></label><br>
-        <input type="radio" name="filiere" value="SM">
-        <label for="MI"><b>Science De La Matière</b></label>
+        <select id="cars">
+            <option value="MI" name="filiere">Math Info</option>
+            <option value="SM"name="filiere">Science De La Matiere</option>
+        </select>
+
+        
         
         </br>
         <!-- HTA LAHNA RADIO -->
@@ -58,11 +60,11 @@
         Wa9ILA TENDAR B JQUERY
          -->
         <label for="MI"><b>Choix Favorable : </b></label><br>
-        <input name="speciality_favorable" type="radio" value="Math">
-        <label for="MI"><b>Mathématique</b></label><br>
-        <input name="speciality_favorable" type="radio" value="Info">
-        <label for="MI"><b>Informatique</b></label>
-
+        
+        <select id="cars">
+            <option value="Math" name="speciality_favorable">Mathématique</option>
+            <option value="Info"name="speciality_favorable">Informatique</option>
+        </select>
         </br>
         <input class="Envoyer" type="submit">
      
