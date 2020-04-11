@@ -7,7 +7,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #2f3542;
     margin-left: 10px;
     text-decoration: none;
   }
@@ -154,3 +154,109 @@ body{
     margin-bottom: 30px;
   }
   
+  footer{
+    border-radius: 30px;
+    background-color: #2f3542;
+}
+
+.social-media{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.social-media h3{
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.social-media ul li
+{
+    display: inline-block;
+}
+.social-media a
+{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: black;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+    font-size: 22px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.social-media a:hover
+{
+    transform: translate(0, -10px); 
+}
+social-media a i
+{
+    transition :.6s all;
+}
+.social-media a:hover >i
+{
+    transform: scale(1.6) rotate(25deg);
+}
+.social-media ul li:nth-child(1) a:hover
+{
+    background-color:#3b5999;
+    color: white;
+    text-decoration: none;
+}
+.social-media ul li:nth-child(2) a:hover
+{
+    background-color:red;
+    color: white;
+    text-decoration: none;
+}
+.social-media ul li:nth-child(3) a:hover
+{
+    background-color:#ff0000;
+    color: white;
+    text-decoration: none;
+}
+.social-media ul li:nth-child(4) a:hover
+{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    text-decoration: none;
+}
+
+.menu-footer{
+    text-align: center;
+    margin-left: 50%;
+    margin-top: -140px;
+}
+
+.menu-footer h3{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 26px;
+    text-align: left;
+    margin-bottom:10px ;
+}
+.menu-footer p{
+    color: white;
+    font-family: "Montserrat";
+    text-align: left;
+
+    font-size: 22px;
+}
+
+
+
+
+
+
+/*la vitesse de l'affichage du soulignement des elements de la class "menu"*/
+.menu a:hover::after{
+    width: 100%;
+    transition: width .4s;
+}

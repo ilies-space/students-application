@@ -3,7 +3,7 @@
 session_start();
 //Conect to database :
 $con = mysqli_connect('localhost', 'root', '');
-mysqli_select_db($con, 'student-application');
+mysqli_select_db($con, 'myproject');
 //-------------------
 
 //var initialisation :
@@ -12,7 +12,7 @@ $email    = $_POST['email'];
 //-------------------
 
 //check if user exist :
-$s      = " select * from students where email ='$email' && password = '$password' ";
+$s      = " select * from users where email ='$email' && password = '$password' ";
 $result = mysqli_query($con, $s);
 $num    = mysqli_num_rows($result);
 if ($num == 1) {

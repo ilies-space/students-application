@@ -21,7 +21,7 @@
             <input id="a" type="password" placeholder="Enter Email" name="password" required>
         
             <br>
-            <input class="Envoye" type="submit">
+            <input onclick="window.location.href = 'admin.html';" class="Envoye" type="submit">
         </form>
     </div>
 </body>

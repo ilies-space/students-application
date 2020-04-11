@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="SignUp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscription</title>
 </head>
 <body>
     <div class="form"> 
@@ -13,61 +13,52 @@
         <center>
         
         <label for="matricule"><b>Matricule : </b></label>
-        <input id="a" type="text" placeholder="Matricule De Attestation De Scolarité" name="matricule" required>
+        <input id="a" type="text" placeholder="Attestation De Scolarité" name="matricule" required>
 
         </br>
 
         <label for="fullname"><b>Full Name : </b></label>
-        <input id="a" type="text" placeholder="Entrez Nom et Prénom" name="full_name" required>
+        <input id="a" type="text" placeholder="Alex Jane" name="full_name" required>
 
         </br>
 
         <label for="email"><b>Email</b></label>
-        <input id="a" type="email" placeholder="Enter Email" name="email" required>
+        <input id="a" type="email" placeholder="xyz@gmail.com" name="email" required>
 
         </br>
 
-        <label for="password"><b>Password :</b></label>
-        <input id="a" type="password" placeholder="Enter Email" name="password" required>
+        <label for="password"><b>Mot De Passe :</b></label>
+        <input id="a" type="password" placeholder="Password..." name="password" required>
 
         </br>
-        <!-- HNA MAHICH TAKHDEM
-        KHADMET KHATRA WSAYER SAME CODE YAZEH-->
-        <select id="cars">
-            <option value="MI" name="filiere">Math Info</option>
-            <option value="SM"name="filiere">Science De La Matiere</option>
-        </select>
 
+        <label for="filiere"><b>filiere :</b></label>
+        <input id="a" type="text" placeholder="MI ou SM" name="filiere" required>
+
+    
         
         
-        </br>
-        <!-- HTA LAHNA RADIO -->
-        
-        <label for="moy_math"><b>Moyenne Unité Math : </b></label>
-        <input id="a" type="text" placeholder="Moy Unité Math" name="moiyenne_math" required>
-
-        </br>
-
-        <label for="moy_info"><b>Moyenne Unité Info : </b></label>
-        <input id="a" type="text" placeholder="Moy Unité Info" name="moiyenne_info" required>
-
-        </br>
-
-        <!-- HADI MAKHREBTCH GA3 FIHA
-        HADI TANI RADIO BSH YKHOS CONDITION
-        IF FILIERE == MATH AFFICHER MATH OU INFO
-        SINON AFFICHER PHYSIQUE OU SM
-        Wa9ILA TENDAR B JQUERY
-         -->
-        <label for="MI"><b>Choix Favorable : </b></label><br>
-        
-        <select id="cars">
-            <option value="Math" name="speciality_favorable">Mathématique</option>
-            <option value="Info"name="speciality_favorable">Informatique</option>
-        </select>
-        </br>
-        <input class="Envoyer" type="submit">
      
+        </br>
+
+
+
+        <label for="moiyenne_math"><b>Moyenne Math Ou Phy :</b></label>
+        <input id="a" type="text" placeholder="Dépend De filiere" name="moiyenne_math" required>
+      
+
+        <label for="moiyenne_info"><b>Moyenne Info Ou Chim : </b></label>
+        <input id="a" type="text" placeholder="Dépend De filiere" name="moiyenne_info" required>
+
+        </br>
+
+        <label for="speciality_favorable"><b>Specialité Favorable : </b></label>
+        <input id="a" type="text" placeholder="Math, Info, Chimie, Physique" name="speciality_favorable" required>
+
+       
+        
+        </br>
+        <input onclick="window.location.href = 'profile.html';" class="Envoyer" type="submit">
 
         </center>
     </form>
